@@ -1,0 +1,17 @@
+#!/usr/bin/env coffee
+
+cli = require 'commander'
+path = require 'path'
+WarpServer = require (path.join __dirname, '../lib/warp/server')
+
+cli
+  .version('0.0.1')
+
+cli
+  .command('watch <file>')
+  .description('Watch specified file for change, and send it to warp clients.')
+  .action (file) ->
+    warps = new WarpServer
+      port: 8800
+
+cli.parse process.argv

@@ -1,0 +1,24 @@
+{
+  "description": "warp - Web Articles Realtime Preview",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "coffee-script": "1.4.0",
+    "commander": "1.1.1",
+    "ws": "0.4.25"
+  },
+  "devDependencies": {
+    "mocha": "1.8.1",
+    "chai": "1.4.2",
+    "request": "2.12.0",
+    "phantom": "0.4.1",
+    "async": "0.2.5"
+  },
+  "scripts": {
+    "test": "mocha ./test",
+    "start": "coffee app.coffee"
+  },
+  "name": "warp",
+  "author": "yukihr",
+  "homepage": "http://yukihr.github.com"
+}
